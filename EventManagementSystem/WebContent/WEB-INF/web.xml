@@ -9,4 +9,24 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>ShowEvent</display-name>
+    <servlet-name>ShowEvent</servlet-name>
+    <servlet-class>com.project.controller.ShowEventDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowEvent</servlet-name>
+    <url-pattern>/Show</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowEventExtra</display-name>
+    <servlet-name>ShowEventExtra</servlet-name>
+    <servlet-class>com.project.controller.ShowEventExtraDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowEventExtra</servlet-name>
+    <url-pattern>/ShowEvent</url-pattern>
+  </servlet-mapping>
 </web-app>
