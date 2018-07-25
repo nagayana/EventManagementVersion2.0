@@ -9,4 +9,14 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <description></description>
+    <display-name>createEventController</display-name>
+    <servlet-name>createEventController</servlet-name>
+    <servlet-class>com.project.controller.createEventController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>createEventController</servlet-name>
+    <url-pattern>/createEvent</url-pattern>
+  </servlet-mapping>
 </web-app>
