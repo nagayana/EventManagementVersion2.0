@@ -17,7 +17,7 @@ th, td {
 }
 </style>
 </head>
-<body>
+<body style="">
 <br>
 <br>
  <h3 align="center">Here are the attraction list for the event </h3><br>
@@ -58,24 +58,41 @@ th, td {
          <tr>
 	            <td> ID </td>
 	            <td> Name </td>
-	           
-	          
+	            <td> Price </td>
+	            <td> Quantity </td>
 	   
-	
-	            
-	        </tr>
+	     </tr>
 	        
 	     <event:forEach  var="food" items="${food}">
 	   
 	        <tr>
 	            <td> ${food.foodId }</td>
 	            <td> ${food.foodName }</td>
-	           
-	            
-	       
-	            
-	            
-	        </tr>
+	            <td> ${food.foodPrice }</td>
+	            <td> ${food.foodQuantity }</td>
+	         
+	       </tr>
+	    
+	     </event:forEach>
+	    </table>
+	    <br>
+	    <br>
+	</div>
+	
+	<h3 align="center">Here are the Guest list for the event </h3><br>
+	<div align="center"> 
+        <table>
+         <tr>
+	            <td> ID </td>
+	   
+	     </tr>
+	        
+	     <event:forEach  var="guest" items="${guest}">
+	   
+	        <tr>
+	            <td> ${guest.designationId }</td>
+	         
+	       </tr>
 	    
 	     </event:forEach>
 	    </table>

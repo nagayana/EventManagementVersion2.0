@@ -34,8 +34,8 @@ public class FoodDaoimp implements FoodDao{
 		
 		pstmt.setInt(1,food.getFoodId());
 		pstmt.setString(2,food.getFoodName()); 
-		pstmt.setInt(3,food.getPrice());
-		pstmt.setInt(4,food.getQuantity());
+		pstmt.setInt(3,food.getFoodPrice());
+		pstmt.setInt(4,food.getFoodQuantity());
 		pstmt.setInt(5,food.getEventId() );
 		int result = pstmt.executeUpdate();
 		if(result>0){
