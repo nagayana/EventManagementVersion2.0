@@ -58,4 +58,54 @@
     <servlet-name>Eventsforregister</servlet-name>
     <url-pattern>/Eventsforregister</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Register</display-name>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.project.controller.Register</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Registrationadded</display-name>
+    <servlet-name>Registrationadded</servlet-name>
+    <servlet-class>com.project.controller.Registrationadded</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registrationadded</servlet-name>
+    <url-pattern>/Registrationadded</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>CancelRegistration</display-name>
+    <servlet-name>CancelRegistration</servlet-name>
+    <servlet-class>com.project.controller.CancelRegistration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CancelRegistration</servlet-name>
+    <url-pattern>/CancelRegistration</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Registrationforuser</display-name>
+    <servlet-name>Registrationforuser</servlet-name>
+    <servlet-class>com.project.controller.Registrationforuser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Registrationforuser</servlet-name>
+    <url-pattern>/Registrationforuser</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateRegisteration</display-name>
+    <servlet-name>UpdateRegisteration</servlet-name>
+    <servlet-class>com.project.controller.UpdateRegisteration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateRegisteration</servlet-name>
+    <url-pattern>/UpdateRegisteration</url-pattern>
+  </servlet-mapping>
 </web-app>

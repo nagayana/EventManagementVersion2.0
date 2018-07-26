@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,13 +28,13 @@
 			<h2>Register For an Event</h2>
 			<p><img src="register.png" width="200" height="150" alt="" /></p>
 			<p></p>
-			<p class="button"><a href="./Eventsforregister">Register</a></p>
+			<p class="button"><a href="./UpdateRegisteration">Register</a></p>
 		</div>
 		<div id="column5">
 			<h2>Cancel Registration</h2>
 			<p><img src="delete.jfif" width="200" height="150" alt="" /></p>
 			<p></p>
-			<p class="button"><a href="">Unregister</a></p>
+			<p class="button"><a href="./CancelRegistration">Unregister</a></p>
 		</div>
 	</div>
 
