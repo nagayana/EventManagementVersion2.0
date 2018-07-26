@@ -2,7 +2,7 @@ package com.project.pojo;
 
 public class Employee {
 	
-
+    
 	private int employeeId, designationId;
 	private String firstName,lastName, type, userName, password;
 
