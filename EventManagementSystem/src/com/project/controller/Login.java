@@ -22,37 +22,36 @@ public class Login extends HttpServlet {
   
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
-		HttpSession session=request.getSession();
-		Authentication as=new AuthenticationService();
+		
+		
+	}
+
+	
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		HttpSession session=request.getSession(true);
+		AuthenticationService as=new AuthenticationService();
 		int n=Integer.parseInt(request.getParameter("uname"));
 		String p=request.getParameter("pwd");
 		
 		
 		
 		try {
-			if(as.authenticate(n, request.getParameter("pwd"))==null){
+			if(as.authenticate(n, p)==null){
 				session.setAttribute("errorMessage","Please enter the credentials again");
-     	        response.sendRedirect("./Login.jsp"); 
+     	        response.sendRedirect("Login.jsp"); 
 			}
-			else if(as.authenticate(n, request.getParameter("pwd")).getType()=="user"){
+			else if(as.authenticate(n, p).getType()=="user"){
 				
-			   response.sendRedirect("./UserHomePage.jsp");
+			   response.sendRedirect("UserHomePage.jsp");
 			}
-			else if(as.authenticate(n, request.getParameter("pwd")).getType()=="admin")
+			else if(as.authenticate(n, p).getType()=="admin")
 			{
-				 response.sendRedirect("./Organiser.jsp");
+				 response.sendRedirect("OrganiserHomePage.jsp");
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-	}
-
-	
-	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		doGet(request, response);
 	}
 
 }

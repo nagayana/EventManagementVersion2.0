@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,7 +8,7 @@
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
-
+ 
 		<div id="header" class="container">
 			<div id="logo">
 				<h2>Event Management System</h2>
