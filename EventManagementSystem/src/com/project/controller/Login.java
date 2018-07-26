@@ -31,7 +31,7 @@ public class Login extends HttpServlet {
 		HttpSession session=request.getSession(true);
 		AuthenticationService as=new AuthenticationService();
 		int n=Integer.parseInt(request.getParameter("uname"));
-		String p=request.getParameter("pwd");
+		String p=request.getParameter("password");
 		
 		
 		
@@ -40,13 +40,18 @@ public class Login extends HttpServlet {
 				session.setAttribute("errorMessage","Please enter the credentials again");
      	        response.sendRedirect("Login.jsp"); 
 			}
-			else if(as.authenticate(n, p).getType()=="user"){
-				
+			
+
+			else if(as.authenticate(n, p).getType().equals("user")){
+			   session.setAttribute("Employee",as.authenticate(n, p));
 			   response.sendRedirect("UserHomePage.jsp");
+
 			}
-			else if(as.authenticate(n, p).getType()=="admin")
-			{
+
+			else if(as.authenticate(n, p).getType().equals("admin"))
+			{    session.setAttribute("Employee",as.authenticate(n, p));
 				 response.sendRedirect("OrganiserHomePage.jsp");
+
 			}
 		} catch (ClassNotFoundException | SQLException e) {
 			// TODO Auto-generated catch block

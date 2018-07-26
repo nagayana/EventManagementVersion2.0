@@ -34,7 +34,7 @@
 			<h2>Delete an Event</h2>
 			<p><img src="delete.jfif" width="200" height="150" alt="" /></p>
 			<p></p>
-			<p class="button"><a href="">Delete</a></p>
+			<p class="button"><a href="./Delete">Delete</a></p>
 		</div>
 		<div id="column3">
 			<h2>Show Event List</h2>

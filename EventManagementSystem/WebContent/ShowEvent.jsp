@@ -20,13 +20,17 @@ th, td {
 </style>
 </head>
 <body>
+<%//ServletContext servletcontext=request.getServletContext(); %>
+<%//String flag=(String)servletcontext.getAttribute("flag"); %>
+<%//int flag1=Integer.parseInt(flag); %>
+<%//pageContext.setAttribute("flag1", flag1); %>
 <div id="header" class="container">
 			<div id="logo">
 				<h2>Event Management System</h2>
 			</div>
 			<div id="menu" >
 				<ul>
-					<li class="active"><a href="">Log Out</a></li>
+					<li class="active"><a href="Login.jsp">Log Out</a></li>
 				</ul>
 			</div>
         </div>
@@ -62,13 +66,21 @@ th, td {
 	    </table>
 	    <br>
 	    <br>
-	    
+	    <event:if test="${flag eq 1 }">
 	     <form action="./ShowEvent" method="post">
 	         Input an Event ID to show its more details
              <input type="text" name="id">
              <input type="submit" name="submit">
          </form>
+	     </event:if>
 	     
+	     <event:if test="${flag eq 2 }">
+	     <form action="./FinalDelete" method="post">
+	         Input an Event ID which you want to delete
+             <input type="text" name="id">
+             <input type="submit" name="submit">
+         </form>
+	     </event:if>
         </div>
 	
 	
