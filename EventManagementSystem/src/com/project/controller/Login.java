@@ -35,11 +35,11 @@ public class Login extends HttpServlet {
      	        response.sendRedirect("./Login.jsp"); 
 			}
 			else if(as.authenticate(n, request.getParameter("pwd")).getType()=="user"){
-				
+			   session.setAttribute("Employee",as.authenticate(n, request.getParameter("pwd")));
 			   response.sendRedirect("./UserHomePage.jsp");
 			}
 			else if(as.authenticate(n, request.getParameter("pwd")).getType()=="admin")
-			{
+			{    session.setAttribute("Employee",as.authenticate(n, request.getParameter("pwd")));
 				 response.sendRedirect("./Organiser.jsp");
 			}
 		} catch (ClassNotFoundException | SQLException e) {

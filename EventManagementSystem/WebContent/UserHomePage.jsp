@@ -28,7 +28,7 @@
 			<h2>Register For an Event</h2>
 			<p><img src="register.png" width="200" height="150" alt="" /></p>
 			<p></p>
-			<p class="button"><a href="">Register</a></p>
+			<p class="button"><a href="./Eventsforregister">Register</a></p>
 		</div>
 		<div id="column5">
 			<h2>Cancel Registration</h2>

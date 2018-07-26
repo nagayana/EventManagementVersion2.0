@@ -10,7 +10,6 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-
     <description></description>
     <display-name>Login</display-name>
     <servlet-name>Login</servlet-name>
@@ -20,7 +19,7 @@
     <servlet-name>Login</servlet-name>
     <url-pattern>/Login</url-pattern>
   </servlet-mapping>
-   <servlet>
+  <servlet>
     <description></description>
     <display-name>ShowEvent</display-name>
     <servlet-name>ShowEvent</servlet-name>
@@ -39,8 +38,8 @@
   <servlet-mapping>
     <servlet-name>ShowEventExtra</servlet-name>
     <url-pattern>/ShowEvent</url-pattern>
-   </servlet-mapping>
-    <servlet>
+  </servlet-mapping>
+  <servlet>
     <display-name>createEventController</display-name>
     <servlet-name>createEventController</servlet-name>
     <servlet-class>com.project.controller.createEventController</servlet-class>
@@ -48,7 +47,15 @@
   <servlet-mapping>
     <servlet-name>createEventController</servlet-name>
     <url-pattern>/createEvent</url-pattern>
-
-
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Eventsforregister</display-name>
+    <servlet-name>Eventsforregister</servlet-name>
+    <servlet-class>com.project.controller.Eventsforregister</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Eventsforregister</servlet-name>
+    <url-pattern>/Eventsforregister</url-pattern>
   </servlet-mapping>
 </web-app>
