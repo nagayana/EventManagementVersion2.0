@@ -8,6 +8,16 @@
 <meta charset="ISO-8859-1">
 <title>Show Event Details</title>
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<style>
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;    
+}
+</style>
 </head>
 <body>
 <div id="header" class="container">
@@ -22,11 +32,43 @@
         </div>
         <!-- end of  header --> 
         
-        <div style="margin:300px" onClick="./ShowEvent">
+        <div align="center"> 
+        <table>
+         <tr>
+	            <td> EventID </td>
+	            <td> EventName </td>
+	            <td> EventLocation</td>
+	            <td> EventRegistrationDeadline</td>
+	            <td> EventTime </td>
+	            <td> MaxRegistration</td>
+	            <td> CurrentRegistration</td>
+	            
+	        </tr>
+	        
 	     <event:forEach  var="event" items="${eventList}">
-	    <input type="radio" name="eventId" value="${event.eventID }" >
-	     ${event.eventID }${event.eventName } <br>
+	   
+	        <tr>
+	            <td> ${event.eventID }</td>
+	            <td> ${event.eventName }</td>
+	            <td> ${event.eventLocation }</td>
+	            <td> ${event.eventRegistrationDeadline }</td>
+	            <td> ${event.eventTime }</td>
+	            <td> ${event.maxRegistration }</td>
+	            <td> ${event.currentRegistration }</td>
+	            
+	        </tr>
+	    
 	     </event:forEach>
+	    </table>
+	    <br>
+	    <br>
+	    
+	     <form action="./ShowEvent" method="post">
+	         Input an Event ID to show its more details
+             <input type="text" name="id">
+             <input type="submit" name="submit">
+         </form>
+	     
         </div>
 	
 	
