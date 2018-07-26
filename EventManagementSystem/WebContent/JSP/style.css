@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.8em;
+	font-size: 2em;
 }
 
 h3 {
@@ -41,9 +41,12 @@ ul, ol {
 
 a {
 	color: #5E5E5E;
+	
 }
 
 a:hover {
+	border: .1px black solid;	
+	
 }
 
 #wrapper {
@@ -77,7 +80,7 @@ a:hover {
 #logo {
 	float: left;
 	width: 800px;
-	margin: 0;
+	margin-top: 50px;
 	padding: 0;
 	color: #FFFFFF;
 }
@@ -417,3 +420,5 @@ ul.style1 .first {
 	text-align: center;
 	text-decoration: none;
 }
+
+
