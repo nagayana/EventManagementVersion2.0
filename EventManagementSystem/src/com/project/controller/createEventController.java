@@ -3,6 +3,7 @@ package com.project.controller;
 import java.io.IOException;
 import java.time.LocalDateTime;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -32,13 +33,16 @@ public class createEventController extends HttpServlet {
 			
 		}
 		
+		RequestDispatcher requestDispatcher = null;
 		if(result==true){
-			// event insertion successful
+			requestDispatcher = request.getRequestDispatcher("JSP/eventInsertionSuccessful.jsp");
+			
 		}
 		else{
-			// event insertion failed
+			requestDispatcher = request.getRequestDispatcher("JSP/eventInsertionFailed.jsp");
 		}
 		
+		requestDispatcher.forward(request, response);
 		
 	}
 

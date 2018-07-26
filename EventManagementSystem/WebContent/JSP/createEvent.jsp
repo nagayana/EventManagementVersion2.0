@@ -1,24 +1,18 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="createEvent.css">
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Insert title here</title>
+	<link rel="stylesheet" type="text/css" href="JSP/createEvent.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+	<title>Insert title here</title>
 </head>
 <body>
-
-
-
-	<form action="./createEvent" method="POST">
+	<form action="createEvent" method="POST">
 
 		<div id="container">
 			<div id="eventform">
-
-
 				<div class="form-style-3">
-
 					<fieldset>
 						<legend>Event Information</legend>
 						<label for="id"><span>ID <span	class="required">*</span></span>
@@ -34,7 +28,7 @@
 						</label> 
 						
 						<label for="time"><span>Time <span class="required">*</span></span>
-							<input type="time" class="input-field" name="time" value="" />
+							<input type="text" class="input-field" name="time" value="" />
 						</label> 
 						
 						<label for="deadline"><span>Deadline <span class="required">*</span></span>
@@ -47,7 +41,7 @@
 						
 						<br>
 						
-						<input type="button" value="submit">
+						<input type="submit" value="submit">
 						<input type="reset" value="reset">
 						
 				
