@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" %>
-    
+    pageEncoding="ISO-8859-1"%>
  <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="event" %>  
 <!DOCTYPE html>
 <html>
@@ -31,8 +30,8 @@ th, td {
 			</div>
         </div>
         <!-- end of  header --> 
-      <%--- <%= ((ArrayList<Event>)session.getAttribute("unRegisterdEvents")) %> --%> 
-      <div align="center"> 
+        
+        <div align="center"> 
         <table>
          <tr>
 	            <td> EventID </td>
@@ -42,23 +41,23 @@ th, td {
 	            
 	            
 	        </tr>
-	     <event:forEach  var="event" items="${unRegisterdEvents}">
+	        
+	     <event:forEach  var="event" items="${RegisterdEvents}">
 	   
 	        <tr>
 	            <td> ${event.eventID }</td>
 	            <td> ${event.eventName }</td>
 	            <td> ${event.eventLocation }</td>
 	            <td> ${event.eventTime }</td>
-	           
 	        </tr>
 	    
 	     </event:forEach>
 	    </table>
 	    <br>
 	    <br>
-	     <form action="./Registrationadded" method="post">
-	         Input an Event ID to register
-             <input type="text" name="id">
+	     <form action="./Registrationdeleted" method="post">
+	         Input an Event ID to cancel the registration
+             <input type="text" name="regisdel">
              <input type="submit" name="submit">
          </form>
 	     

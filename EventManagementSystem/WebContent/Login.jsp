@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+    pageEncoding="ISO-8859-1" errorPage="usernotfound.jsp"%>
   <html>
 
 <title>Event Management system</title>
@@ -30,15 +30,16 @@ password :
 </br>
 <input type="submit" name="submit" value="LogIn"></div></form>
 
-</body>
 
+</body>
+ 
 <%String msg=(String)session.getAttribute("errorMessage");
 	if(session.getAttribute("errorMessage")==null){
 		out.println("welcome");	
+		session.invalidate();
 	}
 	else{
 		out.println(msg);
 	}
- %> 
-
+ %>
 </html>
