@@ -36,6 +36,7 @@ public class Registrationdeleted extends HttpServlet {
 	
 		response.sendRedirect("UserHomePage.jsp");
 		//RequestDispatcher rd = request.getRequestDispatcher("UserHomePage.jsp");
+		//ji
 		//rd.include(request, response);
 		//out.print("<h1>"+"registration deleted"+"</h1>");
 	}
