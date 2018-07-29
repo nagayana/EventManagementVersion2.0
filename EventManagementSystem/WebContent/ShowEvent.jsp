@@ -81,6 +81,14 @@ th, td {
              <input type="submit" name="submit">
          </form>
 	     </event:if>
+	     
+	     <event:if test="${flag eq 3}">
+	     <form action="./Update" method="post">
+	         Input an Event ID which you want to Update
+             <input type="text" name="id">
+             <input type="submit" name="submit">
+         </form>
+	     </event:if>
         </div>
 	
 	

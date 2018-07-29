@@ -46,7 +46,7 @@
 			<h2>Update an Event</h2>
 			<p><img src="update.jfif" width="200" height="150" alt="" /></p>
 			<p></p>
-			<p class="button"><a href="">Update</a></p>
+			<p class="button"><a href="./ShowEventUpdate">Update</a></p>
 		</div>
 	</div>
 

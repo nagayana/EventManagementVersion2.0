@@ -138,4 +138,34 @@
     <servlet-name>Registrationdeleted</servlet-name>
     <url-pattern>/Registrationdeleted</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowEventUpdate</display-name>
+    <servlet-name>ShowEventUpdate</servlet-name>
+    <servlet-class>com.project.controller.updateEvent.ShowEventForUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowEventUpdate</servlet-name>
+    <url-pattern>/ShowEventUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DetailsForUpdate</display-name>
+    <servlet-name>DetailsForUpdate</servlet-name>
+    <servlet-class>com.project.controller.updateEvent.EventDetailsForUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetailsForUpdate</servlet-name>
+    <url-pattern>/Update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateEventDetails</display-name>
+    <servlet-name>UpdateEventDetails</servlet-name>
+    <servlet-class>com.project.controller.updateEvent.UpdateEventDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateEventDetails</servlet-name>
+    <url-pattern>/UpdateEventDetails</url-pattern>
+  </servlet-mapping>
 </web-app>
