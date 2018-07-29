@@ -37,8 +37,6 @@
 			<p class="button"><a href="./CancelRegistration">Unregister</a></p>
 		</div>
 	</div>
-
-
 <div id="footer">
 	<p>&copy;  have a nice day</p>
 </div>
