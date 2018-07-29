@@ -35,7 +35,7 @@
 		<div id="column2">
 			<h2>Delete an Event</h2>
 			<p>
-				<a href=""><img src="delete.jfif" width="200" height="150" alt="" /></a>
+				<a href="./Delete"><img src="delete.jfif" width="200" height="150" alt="" /></a>
 			</p>
 			
 			
@@ -43,7 +43,7 @@
 		<div id="column3">
 			<h2>Show Event List</h2>
 			<p>
-				<a href=""><img src="show.jpg" width="200" height="150" alt="" /></a>	
+				<a href="./Show"><img src="show.jpg" width="200" height="150" alt="" /></a>	
 			</p>
 		</div>
 		<div id="column4">

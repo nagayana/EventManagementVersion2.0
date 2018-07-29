@@ -1,4 +1,25 @@
+#container{
+	width: 1355px;
+	height: 100%;
 
+}
+
+#eventform{
+	
+	width: 40%;
+	margin: 0 auto;
+	margin-top: 150px;
+	text-align: center;
+	
+}
+.form-style-3 label > span{
+    float: left;
+    width: 100px;
+    color: #4e89ed;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 1px 1px 1px #fff;
+}
 
 body {
 	margin: 0;

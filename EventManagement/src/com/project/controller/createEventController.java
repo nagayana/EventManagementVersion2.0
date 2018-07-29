@@ -23,7 +23,7 @@ public class createEventController extends HttpServlet {
 		LocalDateTime deadline = LocalDateTime.parse(request.getParameter("deadline"));
 		int maxRegistration = Integer.parseInt(request.getParameter("maxRegistration"));
 		
-		Event event = new Event(Id,name,location,time,deadline,maxRegistration,0);
+		Event event = new Event(Id,name,location,time,deadline,maxRegistration,0); 
 		boolean result = false;
 		
 		try{

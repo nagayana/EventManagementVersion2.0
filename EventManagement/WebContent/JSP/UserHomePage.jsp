@@ -5,11 +5,11 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Event Management System</title>
+
 <link href="style.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
- 
-		<div id="header" class="container">
+<div id="header" class="container">
 			<div id="logo">
 				<h2>Event Management System</h2>
 			</div>
@@ -25,34 +25,22 @@
 	</br>
 	<div id="featured-content">
 		<div id="column1">
-			<h2>Create an Event</h2>
-			<p><img src="eventfirst.png" width="200" height="150" alt="" /></p>
+			<h2>Register For an Event</h2>
+			<p><img src="register.png" width="200" height="150" alt="" /></p>
 			<p></p>
-			<p class="button"><a href="">Create</a></p>
+			<p class="button"><a href="./UpdateRegisteration">Register</a></p>
 		</div>
-		<div id="column2">
-			<h2>Delete an Event</h2>
+		<div id="column5">
+			<h2>Cancel Registration</h2>
 			<p><img src="delete.jfif" width="200" height="150" alt="" /></p>
 			<p></p>
-			<p class="button"><a href="./Delete">Delete</a></p>
-		</div>
-		<div id="column3">
-			<h2>Show Event List</h2>
-			<p><img src="show.jpg" width="200" height="150" alt="" /></p>
-			<p></p>
-			<p class="button"><a href="./Show">Show</a></p>
-		</div>
-		<div id="column4">
-			<h2>Update an Event</h2>
-			<p><img src="update.jfif" width="200" height="150" alt="" /></p>
-			<p></p>
-			<p class="button"><a href="./ShowEventUpdate">Update</a></p>
+			<p class="button"><a href="./CancelRegistration">Unregister</a></p>
 		</div>
 	</div>
 
 
 <div id="footer">
-	<p>&copy;  have a nice day.</p>
+	<p>&copy;  have a nice day</p>
 </div>
 <!-- end of footer -->
 </body>

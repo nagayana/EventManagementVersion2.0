@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>EventManagementSystem</display-name>
-
   <welcome-file-list>
     <welcome-file>Login.jsp</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -9,8 +8,7 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
-  	<welcome-file>JSP/createEvent.jsp</welcome-file>
-
+    <welcome-file>JSP/createEvent.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
     <description></description>
@@ -63,7 +61,6 @@
   </servlet-mapping>
   <servlet>
     <description></description>
-
     <display-name>DeleteEvent</display-name>
     <servlet-name>DeleteEvent</servlet-name>
     <servlet-class>com.project.controller.DeleteEvent</servlet-class>
@@ -81,8 +78,8 @@
   <servlet-mapping>
     <servlet-name>FinalDelete</servlet-name>
     <url-pattern>/FinalDelete</url-pattern>
-    </servlet-mapping>
-<servlet>
+  </servlet-mapping>
+  <servlet>
     <display-name>Register</display-name>
     <servlet-name>Register</servlet-name>
     <servlet-class>com.project.controller.Register</servlet-class>
@@ -130,5 +127,35 @@
   <servlet-mapping>
     <servlet-name>UpdateRegisteration</servlet-name>
     <url-pattern>/UpdateRegisteration</url-pattern>
-</servlet-mapping>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ShowEventUpdate</display-name>
+    <servlet-name>ShowEventUpdate</servlet-name>
+    <servlet-class>com.project.controller.updateEvent.ShowEventForUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowEventUpdate</servlet-name>
+    <url-pattern>/ShowEventUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DetailsForUpdate</display-name>
+    <servlet-name>DetailsForUpdate</servlet-name>
+    <servlet-class>com.project.controller.updateEvent.EventDetailsForUpdate</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DetailsForUpdate</servlet-name>
+    <url-pattern>/Update</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateEventDetails</display-name>
+    <servlet-name>UpdateEventDetails</servlet-name>
+    <servlet-class>com.project.controller.updateEvent.UpdateEventDetails</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateEventDetails</servlet-name>
+    <url-pattern>/UpdateEventDetails</url-pattern>
+  </servlet-mapping>
 </web-app>
