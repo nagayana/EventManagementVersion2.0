@@ -168,4 +168,44 @@
     <servlet-name>UpdateEventDetails</servlet-name>
     <url-pattern>/UpdateEventDetails</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddFood</display-name>
+    <servlet-name>AddFood</servlet-name>
+    <servlet-class>com.project.controller.AddFood</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddFood</servlet-name>
+    <url-pattern>/AddFood</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>FoodQuantity</display-name>
+    <servlet-name>FoodQuantity</servlet-name>
+    <servlet-class>com.project.controller.FoodQuantity</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>FoodQuantity</servlet-name>
+    <url-pattern>/FoodQuantity</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateFoodList</display-name>
+    <servlet-name>UpdateFoodList</servlet-name>
+    <servlet-class>com.project.controller.UpdateFoodList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateFoodList</servlet-name>
+    <url-pattern>/UpdateFoodList</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AddGuest</display-name>
+    <servlet-name>AddGuest</servlet-name>
+    <servlet-class>com.project.controller.AddGuest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AddGuest</servlet-name>
+    <url-pattern>/AddGuest</url-pattern>
+  </servlet-mapping>
 </web-app>

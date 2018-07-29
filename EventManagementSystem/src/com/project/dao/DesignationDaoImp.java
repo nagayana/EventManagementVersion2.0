@@ -24,5 +24,18 @@ public class DesignationDaoImp implements DesignationDao {
 	    }
 	    return designationList;
 	}
+	
+	public ArrayList<Designation> getAllDesignations() throws ClassNotFoundException, SQLException{
+		ArrayList<Designation> designationList = new ArrayList<>();
+		Connection connection = DBConnection.getDBConnection();
+		PreparedStatement preparedStatement = connection.prepareStatement("select * from designation");
+		ResultSet resultSet = preparedStatement.executeQuery();
+		
+		while(resultSet.next()) {
+			Designation designation = new Designation(resultSet.getInt(1),resultSet.getString(2));
+			designationList.add(designation);
+		}
+		return designationList;
+	}
 
 }

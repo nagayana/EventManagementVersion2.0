@@ -8,6 +8,8 @@ import com.project.dao.DesignationDaoImp;
 import com.project.pojo.Designation;
 import com.project.pojo.GuestList;
 
+import sun.security.krb5.internal.crypto.Des;
+
 public class DesignationServiceImp implements DesignationService {
 
 	
@@ -16,5 +18,8 @@ public class DesignationServiceImp implements DesignationService {
 		DesignationDao designationdao = new DesignationDaoImp();
 		return designationdao.getDesignationList(eventId);
 	}
-
+	
+	public ArrayList<Designation> getDesignationList() throws ClassNotFoundException, SQLException{
+		return new DesignationDaoImp().getAllDesignations();
+	}
 }

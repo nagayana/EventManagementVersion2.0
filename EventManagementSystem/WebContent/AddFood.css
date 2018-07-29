@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body{
+	background-image: url("JSP/images/back.jpg");
+}
+
+#container{
+	
+	width: 100%;
+	height: 100%;
+}
+
+#myTable{
+	margin: 0 auto;
+	border: 2px solid black;
+}
+
+#submitButton{
+	display: block;
+	margin: 0 auto;
+}
+
+div{
+	text-align: center;
+}
+
+#headerText{
+	font-size: medium;
+	font-family: serif;
+	color: white;
+	margin-top: 50px;
+	margin-bottom: 20px;
+}
