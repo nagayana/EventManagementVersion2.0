@@ -52,6 +52,12 @@ public class EventServiceImp implements EventService{
 	@Override
 
 	public boolean deleteEvent(int eventId) throws SQLException, ClassNotFoundException {
+		AttractionServiceImp obj=new AttractionServiceImp();
+		obj.deleteAttractionByEvenetId(eventId);
+		FoodServiceImp obj1=new FoodServiceImp();
+		obj1.deleteFoodByEventId(eventId);
+		GuestListServiceImp obj3=new GuestListServiceImp();
+		obj3.deleteGuestListByEventId(eventId);
 		return DbObject.deleteEvent(eventId);
 	}
 
