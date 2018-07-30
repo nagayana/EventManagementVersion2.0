@@ -7,7 +7,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Events for registration</title>
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="style2.css" rel="stylesheet" type="text/css" media="screen" />
 <style>
 table, th, td {
     border: 1px solid white;
@@ -22,7 +22,7 @@ th, td {
 <body>
 <div id="header" class="container">
 			<div id="logo">
-				<h2>Event Management System</h2>
+				<h1>Event Management System</h1>
 			</div>
 			<div id="menu" >
 				<ul>

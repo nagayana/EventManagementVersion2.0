@@ -12,6 +12,9 @@ public class AuthenticationService implements Authentication {
 	{
 		EmployeeDaoImp employeeDaoImp = new EmployeeDaoImp();
 		Employee employee = employeeDaoImp.getEmployeeById(employee_id);
+		if(employeeDaoImp.getEmployeeById(employee_id)==null){
+			return null;
+		}
 		String storedPassword = employee.getPassword();
 		if(password.equals(storedPassword)){
 			return employee;
