@@ -6,7 +6,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <title>Event Management System</title>
 
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="style2.css" rel="stylesheet" type="text/css" media="screen" />
 </head>
 <body>
 <div id="header" class="container">
