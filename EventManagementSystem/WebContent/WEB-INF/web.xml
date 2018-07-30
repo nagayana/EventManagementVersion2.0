@@ -208,4 +208,34 @@
     <servlet-name>AddGuest</servlet-name>
     <url-pattern>/AddGuest</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateGuestList</display-name>
+    <servlet-name>UpdateGuestList</servlet-name>
+    <servlet-class>com.project.controller.UpdateGuestList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateGuestList</servlet-name>
+    <url-pattern>/UpdateGuestList</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteGuest</display-name>
+    <servlet-name>DeleteGuest</servlet-name>
+    <servlet-class>com.project.controller.DeleteGuest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteGuest</servlet-name>
+    <url-pattern>/DeleteGuest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteGuestList</display-name>
+    <servlet-name>DeleteGuestList</servlet-name>
+    <servlet-class>com.project.controller.DeleteGuestList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteGuestList</servlet-name>
+    <url-pattern>/DeleteGuestList</url-pattern>
+  </servlet-mapping>
 </web-app>

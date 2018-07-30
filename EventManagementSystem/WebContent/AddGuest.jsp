@@ -12,7 +12,7 @@
 <div id="container">
 		
 		<div id="headerText">Select designations from the list</div>
-			<form action="./FoodQuantity" method="post">
+			<form action='<c:url value="./UpdateGuestList"/>' method="post">
 				<table id="myTable" border="1" cellpadding="15">
 					<tr>
 						<td><b>Select</b></td>
