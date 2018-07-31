@@ -1,4 +1,4 @@
-package com.project.controller;
+package com.project.controller.food;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -9,6 +9,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 import com.project.pojo.Food;
 import com.project.pojo.FoodDatabase;
@@ -19,7 +20,8 @@ public class UpdateFoodList extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-	
+		
+		HttpSession session = request.getSession(false);
 		ArrayList<Integer> selectedFoodIds = (ArrayList<Integer>) request.getSession().getAttribute("selectedFoodIds");
 		ArrayList<FoodDatabase> selectedFood = (ArrayList<FoodDatabase>) request.getSession().getAttribute("selectedFood");
 		HashMap<Integer, Integer> idQuantity = new HashMap<>();
@@ -29,6 +31,7 @@ public class UpdateFoodList extends HttpServlet {
 		}
 		
 		FoodServiceImp foodServiceImp = new FoodServiceImp();
+		ArrayList<Food> eventFoodList = null;
 		try {
 			for (FoodDatabase food : selectedFood) {
 				int quantity = idQuantity.get(food.getFoodId());
@@ -39,11 +42,14 @@ public class UpdateFoodList extends HttpServlet {
 				foodServiceImp.insertFood(newFood);
 
 			}
+			
+			eventFoodList = new FoodServiceImp().searchFoodList(100); 
 		} catch (Exception e) {
 			System.out.println(e);
 		}
-		
-		RequestDispatcher requestDispatcher = request.getRequestDispatcher("tempRedirect.jsp");
+	
+		session.setAttribute("eventFoodList", eventFoodList);
+		RequestDispatcher requestDispatcher = request.getRequestDispatcher("ShowEventFood.jsp");
 		requestDispatcher.forward(request, response);
 	}
 

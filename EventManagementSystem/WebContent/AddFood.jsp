@@ -9,9 +9,15 @@
 <title>Food List</title>
 </head>
 <body>
-		<div id="container">
 		
-		<div id="headerText">Select foods from the list</div>
+
+		<div class="navbar">
+			<a href="./AddFood" id="firstLink">Add Food</a> 
+			<a href="#news">Update Food	Quantity</a> 
+			<a href="">Delete Food</a>
+		</div>
+i       <div id="container"> 
+		<div id="headerText" class="text">Select foods from the list</div>
 			<form action="./FoodQuantity" method="post">
 				<table id="myTable" border="1" cellpadding="15">
 					<tr>
@@ -20,7 +26,7 @@
 						<td><b>Name</b></td>
 						<td><b>Price</b></td>
 					</tr>
-					<c:forEach items="${foodList}" var="food">
+					<c:forEach items="${validFoodList}" var="food">
 						<tr>
 							<td><input type="checkbox" name="foods" value="${food.foodId}"></td>
 							<td>${food.foodId }</td>
@@ -32,7 +38,7 @@
 				</table>
 				
 				<br>
-				<div id="submitButton">
+				<div id="submitButton" class="text">
 					<input type="submit" value="submit">
 				</div>
 			</form>

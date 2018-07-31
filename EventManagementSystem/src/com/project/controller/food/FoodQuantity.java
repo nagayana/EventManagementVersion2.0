@@ -1,4 +1,4 @@
-package com.project.controller;
+package com.project.controller.food;
 
 import java.io.IOException;
 import java.sql.SQLException;

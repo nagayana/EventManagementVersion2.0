@@ -9,8 +9,15 @@
 	<title>Food Quantity</title>
 </head>
 <body>
+
+		<div class="navbar">
+			<a href="./AddFood" id="firstLink">Add Food</a> 
+			<a href="#news">Update Food	Quantity</a> 
+			<a href="">Delete Food</a>
+		</div>
+i       
 		<div id="container">
-		<div id="headerText">Specify the quantity for selected foods</div>
+		<div id="headerText" id="text">Specify the quantity for selected foods</div>
 			<form action="./UpdateFoodList" method="post">
 				<table id="myTable" border="1" cellpadding="15">
 					<tr>

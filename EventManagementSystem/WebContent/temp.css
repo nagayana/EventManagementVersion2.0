@@ -1,40 +1,3 @@
-@charset "UTF-8";
-
-body{
-	background-image: url("JSP/images/back.jpg");
-}
-
-#container{
-	
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	margin-top: 40px;
-}
-
-#myTable{
-	margin: 0 auto;
-	border: 2px solid black;
-}
-
-#submitButton{
-	display: block;
-	margin: 0 auto;
-}
-
-
-#headerText{
-	font-size: medium;
-	font-family: serif;
-	color: white;
-	margin-top: 50px;
-	margin-bottom: 20px;
-}
-
-
-
-
-
 /* The navigation bar */
 .navbar {
     overflow: hidden;
@@ -64,4 +27,3 @@ body{
 .main {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
-
