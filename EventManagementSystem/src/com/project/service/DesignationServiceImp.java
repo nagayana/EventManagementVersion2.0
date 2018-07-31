@@ -22,4 +22,8 @@ public class DesignationServiceImp implements DesignationService {
 	public ArrayList<Designation> getDesignationList() throws ClassNotFoundException, SQLException{
 		return new DesignationDaoImp().getAllDesignations();
 	}
+	
+	public Designation getDesignationById(int designationId) throws ClassNotFoundException, SQLException{
+		return new DesignationDaoImp().getDesignationById(designationId);
+	}
 }

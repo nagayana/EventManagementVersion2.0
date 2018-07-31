@@ -172,7 +172,7 @@
     <description></description>
     <display-name>AddFood</display-name>
     <servlet-name>AddFood</servlet-name>
-    <servlet-class>com.project.controller.food.AddFood</servlet-class>
+    <servlet-class>com.project.controller.AddFood</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>AddFood</servlet-name>
@@ -182,7 +182,7 @@
     <description></description>
     <display-name>FoodQuantity</display-name>
     <servlet-name>FoodQuantity</servlet-name>
-    <servlet-class>com.project.controller.food.FoodQuantity</servlet-class>
+    <servlet-class>com.project.controller.FoodQuantity</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>FoodQuantity</servlet-name>
@@ -192,7 +192,7 @@
     <description></description>
     <display-name>UpdateFoodList</display-name>
     <servlet-name>UpdateFoodList</servlet-name>
-    <servlet-class>com.project.controller.food.UpdateFoodList</servlet-class>
+    <servlet-class>com.project.controller.UpdateFoodList</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>UpdateFoodList</servlet-name>
@@ -207,5 +207,35 @@
   <servlet-mapping>
     <servlet-name>AddGuest</servlet-name>
     <url-pattern>/AddGuest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>UpdateGuestList</display-name>
+    <servlet-name>UpdateGuestList</servlet-name>
+    <servlet-class>com.project.controller.UpdateGuestList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateGuestList</servlet-name>
+    <url-pattern>/UpdateGuestList</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteGuest</display-name>
+    <servlet-name>DeleteGuest</servlet-name>
+    <servlet-class>com.project.controller.DeleteGuest</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteGuest</servlet-name>
+    <url-pattern>/DeleteGuest</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DeleteGuestList</display-name>
+    <servlet-name>DeleteGuestList</servlet-name>
+    <servlet-class>com.project.controller.DeleteGuestList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteGuestList</servlet-name>
+    <url-pattern>/DeleteGuestList</url-pattern>
   </servlet-mapping>
 </web-app>

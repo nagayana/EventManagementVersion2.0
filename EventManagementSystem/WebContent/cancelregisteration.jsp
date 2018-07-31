@@ -6,7 +6,7 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Events for registration</title>
-<link href="style.css" rel="stylesheet" type="text/css" media="screen" />
+<link href="style2.css" rel="stylesheet" type="text/css" media="screen" />
 <style>
 table, th, td {
     border: 1px solid white;
